@@ -7,7 +7,7 @@ const recipesSchema = new Schema({
     recipeName: String,
     recipe: String,
     calories: Number,
-    ingredients: String,
+    ingredients: [],
 });
 const userSchema = new Schema({
     email: String,
@@ -16,6 +16,27 @@ const userSchema = new Schema({
 });
 
 
-const Chief = mongoose.model('Chief', userSchema);
+const Cheff = mongoose.model('Cheff', userSchema);
 
-module.exports = Chief;
+module.exports = Cheff;
+
+
+
+// userModel{
+// 	email: ""
+// 	name:""
+// 	myRecipes:[]
+// }
+
+// blogModel{
+// 	title: ""
+// 	text: ""
+// 	userName:""
+// 	Image:""
+// }
+// recipesModel{
+// 	recipeName:""
+// 	recipe:""
+// 	calories:
+// 	ingredients:	
+// }
